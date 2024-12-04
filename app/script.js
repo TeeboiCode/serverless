@@ -96,16 +96,13 @@ function saveQuizResult(score) {
 
 async function postUserInput(userInput) {
   try {
-    const res = await fetch(
-      "https://your-project.vercel.app/api/postUserInput",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(userInput),
-      }
-    );
+    const res = await fetch("https://serverless-kohl-theta.vercel.app/", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(userInput),
+    });
 
     if (!res.ok) {
       throw new Error("Network response was not ok");
