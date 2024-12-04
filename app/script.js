@@ -209,7 +209,20 @@ function startCountDown() {
 // =============================
 //Questions and Options array
 // =============================
-
+const quizQuestions = [
+  {
+    id: 1,
+    question: "What is the data type of `true` in JavaScript?",
+    options: ["String", "Boolean", "Number", "Object"],
+    correct: "Boolean",
+  },
+  {
+    id: 2,
+    question: "Which keyword is used to define a block-scoped variable?",
+    options: ["var", "let", "function", "global"],
+    correct: "let",
+  },
+];
 let remainingQuestion = [...quizQuestions];
 // console.log(remainingQuestion);
 
