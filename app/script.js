@@ -83,6 +83,7 @@ function saveQuizResult(score) {
 
   // Add new result to array
   results.push(newResult);
+  postUserInput(newResult);
 
   // Sort by score (highest first)
   results.sort((a, b) => b.percentage - a.percentage);
